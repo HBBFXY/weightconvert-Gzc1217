@@ -1,10 +1,13 @@
-weight_str = input().strip()
-num = float(weight_str[:-2])
-unit = weight_str[-2:]
-kg_to_pd = 2.2046
-if unit == 'kg':
-    converted = num * kg_to_pd
-    print(f"对应的英制重量为{converted:.3f}磅")
-elif unit == 'pd':
-    converted = num / kg_to_pd
-    print(f"对应的公制重量为{converted:.3f}千克")
+rate = 2.2046
+选择=（同Internationalorganizations）国际组织(投入("1: 千克转磅 2: 磅转千克"))
+如果选择==1:
+kg =漂浮物(投入("请输入千克数："))
+lb =千克*速率
+    打印("转换后的磅数为："，磅)
+ 否则如果选择==2:
+lb =漂浮物(投入("请输入磅数："))
+千克=磅/速率
+    打印("转换后的千克数为："，千克)
+其他:
+    打印("输入错误")
+    出口()
